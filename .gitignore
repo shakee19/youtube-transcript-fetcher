@@ -1,0 +1,15 @@
+venv/
+
+__pycache__/
+
+*.pyc
+
+logs/
+
+transcripts/
+
+.env
+
+.DS_Store
+
+.vscode/
