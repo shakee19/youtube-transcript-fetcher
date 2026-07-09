@@ -79,6 +79,11 @@ This project was built as part of learning **Professional Python Development** a
 ![Statistics](screenshots/statistics.png)
 
 ---
+## Successful Download
+
+![Success](screenshots/success.png)
+
+---
 
 # 📂 Project Structure
 
