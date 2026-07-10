@@ -1,87 +1,137 @@
 # 🎥 YouTube Transcript Fetcher Pro
 
-![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
-![Version](https://img.shields.io/badge/Version-1.0.0-success.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)
+<div align="center">
 
-A professional Python application that downloads transcripts from YouTube videos and exports them into multiple formats such as **TXT**, **JSON**, and **PDF**. The application also supports multiple transcript languages, detailed transcript statistics, logging, and a modular architecture.
+![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Version](https://img.shields.io/badge/Version-2.0-success?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
----
+### A modern Streamlit application to fetch YouTube transcripts in multiple languages and export them as TXT, JSON, and PDF.
 
-# 📖 About
-
-YouTube Transcript Fetcher Pro is a command-line application developed using Python.
-
-It allows users to:
-
-- Download transcripts from YouTube videos
-- Select transcript language (if multiple languages are available)
-- Save transcripts as TXT, JSON, and PDF
-- View transcript statistics
-- Automatically create log files
-- Handle errors gracefully
-- Learn real-world software engineering concepts through a modular project structure
-
-This project was built as part of learning **Professional Python Development** and follows software engineering best practices.
+</div>
 
 ---
 
 # ✨ Features
 
-✅ Download transcripts from YouTube
-
-✅ Multi-language transcript support
-
-✅ Automatic YouTube URL parsing
-
-✅ Export transcript as TXT
-
-✅ Export transcript as JSON
-
-✅ Export transcript as PDF
-
-✅ Transcript statistics
-
-- Word Count
-- Character Count
-- Line Count
-- Estimated Reading Time
-
-✅ Logging system
-
-✅ Exception handling
-
-✅ Clean modular architecture
-
-✅ Configuration management
-
-✅ GitHub ready project
+- 🎨 Modern Streamlit Dashboard
+- 📺 Automatic YouTube Thumbnail Preview
+- 🌍 Multi-language Transcript Support
+- 📊 Live Transcript Statistics
+- 📄 TXT Export
+- 📑 JSON Export
+- 📕 PDF Export
+- 👀 Built-in Transcript Viewer
+- ⚡ Fast Processing
+- 🌙 Professional Dark UI
+- 📝 Logging System
+- 🛡️ Exception Handling
+- 🧩 Modular Architecture
 
 ---
 
 # 📸 Screenshots
 
-## Home Screen
+## 🏠 Home
+
+> Replace this with your latest screenshot.
 
 ![Home](screenshots/home.png)
 
 ---
 
-## Language Selection
+## 📺 Video Preview
 
-![Languages](screenshots/language_selection.png)
+> Replace this with a screenshot after fetching a video.
+
+![Video](screenshots/video_preview.png)
 
 ---
 
-## Transcript Statistics
+## 📊 Transcript Statistics
 
 ![Statistics](screenshots/statistics.png)
 
 ---
-## Successful Download
 
-![Success](screenshots/success.png)
+## 📄 Transcript Viewer
+
+![Transcript](screenshots/transcript.png)
+
+---
+
+## 📥 Downloads
+
+![Downloads](screenshots/downloads.png)
+
+---
+
+# 🚀 Getting Started
+
+## Clone Repository
+
+```bash
+git clone https://github.com/shakee19/youtube-transcript-fetcher.git
+
+cd youtube-transcript-fetcher
+```
+
+## Create Virtual Environment
+
+### macOS / Linux
+
+```bash
+python3 -m venv venv
+
+source venv/bin/activate
+```
+
+### Windows
+
+```bash
+python -m venv venv
+
+venv\Scripts\activate
+```
+
+## Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# ▶ Run the Application
+
+```bash
+streamlit run app.py
+```
+
+The application will open automatically in your browser.
+
+Usually at:
+
+```
+http://localhost:8501
+```
+
+---
+
+# 🖥️ Application Preview
+
+The application allows you to:
+
+- Paste any YouTube URL
+- Automatically load the video thumbnail
+- Detect available transcript languages
+- Select your preferred language
+- View transcript statistics
+- Read the transcript inside the application
+- Download as TXT
+- Download as JSON
+- Download as PDF
 
 ---
 
@@ -90,218 +140,86 @@ This project was built as part of learning **Professional Python Development** a
 ```text
 youtube-transcript-fetcher/
 │
-├── main.py
+├── app.py
+├── components/
+│   ├── sidebar.py
+│   ├── hero.py
+│   ├── video_card.py
+│   ├── statistics_card.py
+│   ├── transcript_viewer.py
+│   ├── downloads.py
+│   └── footer.py
+│
+├── styles/
+│   └── style.css
+│
 ├── transcript.py
 ├── youtube.py
 ├── utils.py
-├── file_handler.py
-├── pdf_exporter.py
 ├── statistics.py
-├── logger.py
+├── pdf_exporter.py
+├── file_handler.py
 ├── config.py
+├── logger.py
 ├── exceptions.py
-├── requirements.txt
-├── README.md
-├── LICENSE
-├── .gitignore
-│
-├── logs/
 │
 ├── screenshots/
-│
 ├── transcripts/
-│
-└── venv/
+├── requirements.txt
+├── LICENSE
+└── README.md
 ```
 
 ---
 
-# ⚙ Installation
+# 🛠️ Built With
 
-Clone the repository
-
-```bash
-git clone https://github.com/shakee19/youtube-transcript-fetcher.git
-```
-
-Move into the project
-
-```bash
-cd youtube-transcript-fetcher
-```
-
-Create a virtual environment
-
-```bash
-python3 -m venv venv
-```
-
-Activate it
-
-### macOS / Linux
-
-```bash
-source venv/bin/activate
-```
-
-### Windows
-
-```bash
-venv\Scripts\activate
-```
-
-Install dependencies
-
-```bash
-pip3 install -r requirements.txt
-```
-
----
-
-# ▶ Usage
-
-Run the application
-
-```bash
-python3 main.py
-```
-
-Example
-
-```text
-Enter YouTube URL:
-
-https://youtu.be/dQw4w9WgXcQ
-```
-
-Choose transcript language
-
-```text
-1. English
-2. Hindi
-3. Kannada
-```
-
-The application downloads the transcript and saves
-
-- TXT
-- JSON
-- PDF
-
-inside the **transcripts/** folder.
-
----
-
-# 📊 Sample Output
-
-```text
-============================================================
-        YouTube Transcript Fetcher Pro
-            Version 1.0.0
-============================================================
-
-Fetching available languages...
-
-Downloading transcript...
-
-Transcript Statistics
-
-Words : 5421
-
-Characters : 28764
-
-Lines : 410
-
-Reading Time : 22 minutes
-
-Download Successful
-```
-
----
-
-# 📁 Output Files
-
-```
-transcripts/
-
-Python Tutorial.txt
-
-Python Tutorial.json
-
-Python Tutorial.pdf
-```
-
----
-
-# 📦 Technologies Used
-
-- Python 3
+- Python
+- Streamlit
 - YouTube Transcript API
 - Requests
 - ReportLab
 - JSON
-- Logging
 - Git
 - GitHub
 
 ---
 
-# 🧠 Concepts Learned
+# 📊 Export Formats
 
-This project demonstrates:
-
-- Modular Programming
-- REST API Integration
-- JSON Parsing
-- File Handling
-- Exception Handling
-- Logging
-- Configuration Management
-- PDF Generation
-- Statistics Processing
-- Professional Project Structure
-- Virtual Environments
-- Git & GitHub Workflow
+| Format | Supported |
+|---------|-----------|
+| TXT | ✅ |
+| JSON | ✅ |
+| PDF | ✅ |
 
 ---
 
-# 🚀 Future Improvements
+# 🎯 Roadmap
 
-- Search inside transcript
-
-- Batch transcript downloader
-
-- GUI version using Tkinter
-
-- Web version using Flask
-
-- Transcript summarization using AI
-
-- Keyword extraction
-
-- Subtitle (.srt) export
-
-- Automatic translation
+- 🤖 AI Transcript Summarization
+- 🌐 Automatic Translation
+- 🔍 Transcript Search
+- 📄 Subtitle (.SRT) Export
+- 📥 Playlist Transcript Downloader
+- ☁️ Streamlit Cloud Deployment
+- 📈 Analytics Dashboard
 
 ---
 
 # 🤝 Contributing
 
-Contributions are welcome.
-
-If you'd like to improve this project:
+Contributions are welcome!
 
 1. Fork the repository
-
-2. Create a new branch
-
+2. Create your feature branch
 3. Commit your changes
-
-4. Open a Pull Request
+4. Push to GitHub
+5. Open a Pull Request
 
 ---
 
-# 📜 License
+# 📄 License
 
 This project is licensed under the MIT License.
 
@@ -311,8 +229,14 @@ This project is licensed under the MIT License.
 
 **Shakira**
 
-GitHub: [@shakee19](https://github.com/shakee19)
+GitHub: https://github.com/shakee19
 
 ---
 
-⭐ If you found this project useful, consider giving it a Star.
+<div align="center">
+
+⭐ If you like this project, consider giving it a star!
+
+Made with ❤️ using Python & Streamlit
+
+</div>
